@@ -11,11 +11,10 @@ const Footer = () => {
               href="https://github.com/ajiprasetia" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-primary font-semibold"
+              className="text-primary hover:text-orange-400 font-semibold transition-colors"
             >
               Aji Prasetia
             </a>
-            . All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             <span>API from</span>
@@ -23,7 +22,7 @@ const Footer = () => {
               href="https://moneyconvert.net/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-primary font-semibold"
+              className="text-primary hover:underline font-semibold"
             >
               moneyconvert.net
             </a>

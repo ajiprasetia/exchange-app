@@ -62,15 +62,6 @@ atau jika menggunakan yarn:
 yarn install
 ```
 
-4. Setup environment variables (jika diperlukan)
-
-Buat file `.env` di root directory:
-
-```env
-VITE_EXCHANGE_API_KEY=your_api_key_here
-VITE_API_BASE_URL=your_api_url_here
-```
-
 ## 🚀 Menjalankan Project
 
 ### Development Mode

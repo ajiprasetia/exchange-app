@@ -1,16 +1,191 @@
-# React + Vite
+# Exchange App 💱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi konversi mata uang (currency exchange) yang dibangun dengan React dan Vite. Aplikasi ini memungkinkan pengguna untuk mengecek nilai tukar mata uang secara real-time dan melakukan konversi antar mata uang.
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://exchange-app-by-ajiprasetia.vercel.app)
+[![React](https://img.shields.io/badge/React-18+-61dafb?logo=react)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5+-646cff?logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3+-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
 
-## React Compiler
+Coba aplikasi live di: [exchange-app-by-ajiprasetia.vercel.app](https://exchange-app-by-ajiprasetia.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Fitur
 
-## Expanding the ESLint configuration
+- 💱 **Real-time Exchange Rates**: Nilai tukar mata uang yang selalu update
+- 🔄 **Multi-Currency Support**: Mendukung berbagai mata uang internasional
+- 📊 **Easy Conversion**: Interface yang mudah digunakan untuk konversi mata uang
+- 📱 **Responsive Design**: Tampilan optimal di semua perangkat
+- ⚡ **Fast Performance**: Loading cepat dengan Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: [React 18+](https://reactjs.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Code Quality**: ESLint
+- **Deployment**: [Vercel](https://vercel.com/)
+- **API**: Exchange Rate API (atau API lain untuk data nilai tukar)
+
+## 📋 Prerequisites
+
+Sebelum memulai, pastikan Anda sudah menginstall:
+
+- [Node.js](https://nodejs.org/) (versi 16 atau lebih tinggi)
+- npm atau yarn
+- API Key untuk exchange rate service (jika diperlukan)
+
+## 🔧 Instalasi
+
+1. Clone repository ini
+
+```bash
+git clone https://github.com/ajiprasetia/exchange-app.git
+```
+
+2. Masuk ke direktori project
+
+```bash
+cd exchange-app
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+atau jika menggunakan yarn:
+
+```bash
+yarn install
+```
+
+4. Setup environment variables (jika diperlukan)
+
+Buat file `.env` di root directory:
+
+```env
+VITE_EXCHANGE_API_KEY=your_api_key_here
+VITE_API_BASE_URL=your_api_url_here
+```
+
+## 🚀 Menjalankan Project
+
+### Development Mode
+
+Untuk menjalankan project dalam mode development:
+
+```bash
+npm run dev
+```
+
+atau:
+
+```bash
+yarn dev
+```
+
+Aplikasi akan berjalan di `http://localhost:5173` (atau port lain jika 5173 sudah digunakan).
+
+### Build untuk Production
+
+Untuk membuat build production:
+
+```bash
+npm run build
+```
+
+atau:
+
+```bash
+yarn build
+```
+
+File hasil build akan tersimpan di folder `dist/`.
+
+### Preview Build
+
+Untuk melihat preview dari build production:
+
+```bash
+npm run preview
+```
+
+atau:
+
+```bash
+yarn preview
+```
+
+
+## 🎯 Cara Menggunakan
+
+1. **Pilih Mata Uang Asal**: Pilih mata uang yang ingin Anda konversi
+2. **Masukkan Jumlah**: Input jumlah uang yang ingin dikonversi
+3. **Pilih Mata Uang Tujuan**: Pilih mata uang hasil konversi
+4. **Lihat Hasil**: Aplikasi akan menampilkan hasil konversi secara otomatis
+
+## 🔌 API Integration
+
+Aplikasi ini menggunakan API untuk mendapatkan data nilai tukar mata uang. Beberapa API yang bisa digunakan:
+
+- [ExchangeRate-API](https://www.exchangerate-api.com/)
+- [Fixer.io](https://fixer.io/)
+- [Open Exchange Rates](https://openexchangerates.org/)
+- [CurrencyAPI](https://currencyapi.com/)
+
+## 📦 Scripts yang Tersedia
+
+| Script | Deskripsi |
+|--------|-----------|
+| `npm run dev` | Menjalankan development server |
+| `npm run build` | Membuat production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Menjalankan ESLint untuk check code quality |
+
+## 🎨 Customization
+
+### Menambah Mata Uang Baru
+
+Edit file konfigurasi mata uang di `src/utils/currencies.js` (atau sesuaikan):
+
+```javascript
+export const currencies = [
+  { code: 'USD', name: 'US Dollar', symbol: '$' },
+  { code: 'EUR', name: 'Euro', symbol: '€' },
+  { code: 'IDR', name: 'Indonesian Rupiah', symbol: 'Rp' },
+  // Tambahkan mata uang lainnya
+];
+```
+
+### Mengubah Styling
+
+- Konfigurasi Tailwind CSS dapat diubah di `tailwind.config.js`
+- Custom CSS dapat ditambahkan sesuai kebutuhan
+
+
+## 📝 License
+
+Project ini bersifat open source dan tersedia untuk digunakan oleh siapa saja.
+
+## 👤 Author
+
+**Aji Prasetia**
+
+- Website: [ajiprasetia.vercel.app](https://ajiprasetia.vercel.app)
+- GitHub: [@ajiprasetia](https://github.com/ajiprasetia)
+- Exchange App: [exchange-app-by-ajiprasetia.vercel.app](https://exchange-app-by-ajiprasetia.vercel.app)
+
+## 🙏 Acknowledgments
+
+- [React](https://reactjs.org/) - JavaScript library untuk building UI
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vercel](https://vercel.com/) - Platform untuk deployment
+- Exchange Rate API providers - Data nilai tukar mata uang
+
+⭐ Jika project ini berguna, jangan lupa beri star!
+
+💡 Ada saran atau menemukan bug? Silakan buat issue!

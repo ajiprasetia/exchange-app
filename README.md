@@ -62,6 +62,15 @@ atau jika menggunakan yarn:
 yarn install
 ```
 
+4. Setup environment variables (jika diperlukan)
+
+Buat file `.env` di root directory:
+
+```env
+VITE_EXCHANGE_API_KEY=your_api_key_here
+VITE_API_BASE_URL=your_api_url_here
+```
+
 ## 🚀 Menjalankan Project
 
 ### Development Mode
@@ -77,23 +86,38 @@ atau:
 ```bash
 yarn dev
 ```
+
 Aplikasi akan berjalan di `http://localhost:5173` (atau port lain jika 5173 sudah digunakan).
+
+### Build untuk Production
+
+Untuk membuat build production:
+
+```bash
+npm run build
 ```
-## 🎯 Cara Menggunakan
 
-1. **Pilih Mata Uang Asal**: Pilih mata uang yang ingin Anda konversi
-2. **Masukkan Jumlah**: Input jumlah uang yang ingin dikonversi
-3. **Pilih Mata Uang Tujuan**: Pilih mata uang hasil konversi
-4. **Lihat Hasil**: Aplikasi akan menampilkan hasil konversi secara otomatis
+atau:
 
-## 📦 Scripts yang Tersedia
+```bash
+yarn build
+```
 
-| Script | Deskripsi |
-|--------|-----------|
-| `npm run dev` | Menjalankan development server |
-| `npm run build` | Membuat production build |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Menjalankan ESLint untuk check code quality |
+File hasil build akan tersimpan di folder `dist/`.
+
+### Preview Build
+
+Untuk melihat preview dari build production:
+
+```bash
+npm run preview
+```
+
+atau:
+
+```bash
+yarn preview
+```
 
 ## 📝 License
 
@@ -106,14 +130,6 @@ Project ini bersifat open source dan tersedia untuk digunakan oleh siapa saja.
 - Website: [ajiprasetia.vercel.app](https://ajiprasetia.vercel.app)
 - GitHub: [@ajiprasetia](https://github.com/ajiprasetia)
 - Exchange App: [exchange-app-by-ajiprasetia.vercel.app](https://exchange-app-by-ajiprasetia.vercel.app)
-
-## 🙏 Acknowledgments
-
-- [React](https://reactjs.org/) - JavaScript library untuk building UI
-- [Vite](https://vitejs.dev/) - Next generation frontend tooling
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Vercel](https://vercel.com/) - Platform untuk deployment
-- Exchange Rate API providers - Data nilai tukar mata uang
 
 ⭐ Jika project ini berguna, jangan lupa beri star!
 

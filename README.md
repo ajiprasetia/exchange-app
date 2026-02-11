@@ -77,40 +77,8 @@ atau:
 ```bash
 yarn dev
 ```
-
 Aplikasi akan berjalan di `http://localhost:5173` (atau port lain jika 5173 sudah digunakan).
-
-### Build untuk Production
-
-Untuk membuat build production:
-
-```bash
-npm run build
 ```
-
-atau:
-
-```bash
-yarn build
-```
-
-File hasil build akan tersimpan di folder `dist/`.
-
-### Preview Build
-
-Untuk melihat preview dari build production:
-
-```bash
-npm run preview
-```
-
-atau:
-
-```bash
-yarn preview
-```
-
-
 ## 🎯 Cara Menggunakan
 
 1. **Pilih Mata Uang Asal**: Pilih mata uang yang ingin Anda konversi

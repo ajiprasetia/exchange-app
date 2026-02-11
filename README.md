@@ -62,15 +62,6 @@ atau jika menggunakan yarn:
 yarn install
 ```
 
-4. Setup environment variables (jika diperlukan)
-
-Buat file `.env` di root directory:
-
-```env
-VITE_EXCHANGE_API_KEY=your_api_key_here
-VITE_API_BASE_URL=your_api_url_here
-```
-
 ## 🚀 Menjalankan Project
 
 ### Development Mode
@@ -127,15 +118,6 @@ yarn preview
 3. **Pilih Mata Uang Tujuan**: Pilih mata uang hasil konversi
 4. **Lihat Hasil**: Aplikasi akan menampilkan hasil konversi secara otomatis
 
-## 🔌 API Integration
-
-Aplikasi ini menggunakan API untuk mendapatkan data nilai tukar mata uang. Beberapa API yang bisa digunakan:
-
-- [ExchangeRate-API](https://www.exchangerate-api.com/)
-- [Fixer.io](https://fixer.io/)
-- [Open Exchange Rates](https://openexchangerates.org/)
-- [CurrencyAPI](https://currencyapi.com/)
-
 ## 📦 Scripts yang Tersedia
 
 | Script | Deskripsi |
@@ -144,27 +126,6 @@ Aplikasi ini menggunakan API untuk mendapatkan data nilai tukar mata uang. Beber
 | `npm run build` | Membuat production build |
 | `npm run preview` | Preview production build |
 | `npm run lint` | Menjalankan ESLint untuk check code quality |
-
-## 🎨 Customization
-
-### Menambah Mata Uang Baru
-
-Edit file konfigurasi mata uang di `src/utils/currencies.js` (atau sesuaikan):
-
-```javascript
-export const currencies = [
-  { code: 'USD', name: 'US Dollar', symbol: '$' },
-  { code: 'EUR', name: 'Euro', symbol: '€' },
-  { code: 'IDR', name: 'Indonesian Rupiah', symbol: 'Rp' },
-  // Tambahkan mata uang lainnya
-];
-```
-
-### Mengubah Styling
-
-- Konfigurasi Tailwind CSS dapat diubah di `tailwind.config.js`
-- Custom CSS dapat ditambahkan sesuai kebutuhan
-
 
 ## 📝 License
 
